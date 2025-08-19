@@ -1,0 +1,40 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/6.0.0/iosevka/iosevka.min.css");
+
+body {
+  background-color: #282828;
+  color: #eddbb2;
+  font-family: Iosevka Web;
+}
+
+a {
+   font-size: 16px;
+}
+
+a:link {
+   color: #83a598;
+}
+
+a:visited {
+   color: #b16286
+}
+
+a:active {
+   color: #83a598
+}
+
+h1 {
+  background-color: #eddbb2;
+  color: #282828
+}
+
+.home-image {
+  width: 500px;
+  margin: auto;
+  display: block;
+}
+
+.about-image {
+  width: 700px;
+  margin: auto;
+  display: block;
+}
