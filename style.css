@@ -1,30 +1,42 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/6.0.0/iosevka/iosevka.min.css");
 
+:root {
+  --font-family: Iosevka Web;
+  --background-color: #282828;
+  --color: #eddbb2;
+  --link-color: #83a598;
+  --visited-color: #b16286;
+  --code-background-color: #3c3836;
+  --code-color: #ebdbb2;
+  --blockquote-color: #a89984;
+}
+
 body {
-  background-color: #282828;
+  background-color: var(--background-color);
   color: #eddbb2;
-  font-family: Iosevka Web;
+  font-family: var(--font-family);
+  margin: 0px;
 }
 
 a {
-   font-size: 16px;
+   font-size: 32px;
 }
 
 a:link {
-   color: #83a598;
+   color: var(--link-color);
 }
 
 a:visited {
-   color: #b16286
+   color: var(--visited-color)
 }
 
 a:active {
-   color: #83a598
+   color: var(--link-color)
 }
 
 h1 {
-  background-color: #eddbb2;
-  color: #282828
+  background-color: var(--color);
+  color: var(--background-color)
 }
 
 .home-image {
@@ -37,4 +49,33 @@ h1 {
   width: 700px;
   margin: auto;
   display: block;
+}
+
+.page-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--code-background-color);
+  flex-wrap: wrap;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.logo {
+  max-width: 100px;
+  min-width: 60px;
+  padding: 10px;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.navigation a {
+  text-decoration: none;
+  padding: 10px;
 }
