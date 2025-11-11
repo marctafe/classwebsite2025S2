@@ -9,6 +9,7 @@
   --code-background-color: #3c3836;
   --code-color: #ebdbb2;
   --blockquote-color: #a89984;
+  color-scheme: light dark;
 }
 
 body {
@@ -113,12 +114,15 @@ h1 {
     border: solid 1px;
     border-radius: 5px 0px 0px 5px;
     flex: 1;
+    background-color: var(--background-color);
+    color: var(--color);
 }
 
 #search button {
     padding: 10px;
     border: solid 1px;
     background-color: var(--color);
+    color: var(--color);
     border-radius: 0px 5px 5px 0px;
 }
 
@@ -149,14 +153,23 @@ h1 {
 }
 .slide button {
   padding: 10px;
-  background-color: var(--color);
+  color: var(--color);
+  background-color: var(--background-color);
   min-width: 300px;
-  border: solid 1px var(--background-color);
+  border: solid 1px var(--color);
   border-radius: 8px;
 }
 .slide:nth-child(1) {
    background-image: url("images/carousel/halloween.jpg")
-   /* Possible color tag here */
+}
+.slide:nth-child(2) {
+   background-image: url("images/carousel/black-friday.jpg")
+}
+.slide:nth-child(3) {
+   background-image: url("images/carousel/cyber-monday.jpg")
+}
+.slide:nth-child(4) {
+   background-image: url("images/carousel/thanksgiving.jpg")
 }
 
 nav a {
@@ -186,6 +199,7 @@ nav a {
   display: flex;
   flex-direction: row;
   gap: 3em;
+  flex-wrap: wrap;
 }
 
 /* Card */
@@ -211,6 +225,8 @@ nav a {
     min-width: 100%;
     padding: 12px;
     border: 1px solid var(--color);
+    color: var(--color);
+    background-color: var(--background-color);
     border-radius: 5px;
 }
 .main-content {
@@ -218,4 +234,44 @@ nav a {
     margin-left: auto;
     margin-right: auto;
     max-width: 80vw;
+}
+
+.banner2 {
+  min-height: 15vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--code-background-color);
+  margin-top: 1em;
+}
+
+.banner2 button {
+  padding: 10px;
+  color: var(--color);
+  background-color: var(--background-color);
+  min-width: 300px;
+  border: solid 1px var(--color);
+  border-radius: 8px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-form input {
+  margin-bottom: 0.5em;
+}
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;  
+}
+.contact-form button {
+  min-width: auto;
+  color: var(--color);
+  background-color: var(--background-color);
+}
+.contact-details a {
+  color: var(--link-color)
 }
